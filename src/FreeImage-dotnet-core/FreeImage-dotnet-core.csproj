@@ -61,7 +61,7 @@ This is for FreeImage version 3.17.0 (The version number of this package no long
   </ItemGroup>-->
 
   <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard2.0' ">
-	<PackageReference Include="System.Drawing-dotnet-core" Version="1.2.3" />
+    <PackageReference Include="System.Drawing.Common" Version="6.0.0" />
   </ItemGroup>
 
   <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard1.6' ">
