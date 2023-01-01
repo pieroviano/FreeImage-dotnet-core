@@ -123,7 +123,7 @@ This is for FreeImage version 3.17.0 (The version number of this package no long
 	<Reference Include="Microsoft.CSharp" />
   </ItemGroup>
 
-  <Target Name="CopyPackage" AfterTargets="Pack">
+  <Target Name="DeleteOldPackage" AfterTargets="Pack" Condition="'$([System.Runtime.InteropServices.RuntimeInformation]::IsOSPlatform($([System.Runtime.InteropServices.OSPlatform]::Windows)))' == 'true'">
     <Exec Command="copy /y $(ProjectDir)bin\$(Configuration)\*.nupkg $(SolutionDir)Packages" />
   </Target>
 </Project>
