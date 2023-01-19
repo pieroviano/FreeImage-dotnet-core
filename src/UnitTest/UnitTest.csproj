@@ -2,6 +2,10 @@
 
   <PropertyGroup>
     <TargetFrameworks>netcoreapp1.1;net461</TargetFrameworks>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <IncludeSymbols Condition="'$(Configuration)'=='Debug'">true</IncludeSymbols>
+    <SymbolPackageFormat Condition="'$(Configuration)'=='Debug'">snupkg</SymbolPackageFormat>
+    <IncludeSymbols Condition="'$(Configuration)'!='Debug'">false</IncludeSymbols>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <AssemblyName>UnitTest</AssemblyName>
     <PackageTargetFallback>$(PackageTargetFallback);dnxcore50</PackageTargetFallback>
