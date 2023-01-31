@@ -1,4 +1,6 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project = "$(UserProfile)\.nuget\packages\obfuscatorutility\1.0.0\build\ObfuscatorUtility.targets" Condition="Exists('$(UserProfile)\.nuget\packages\obfuscatorutility\1.0.0\build\ObfuscatorUtility.targets')" />
+  <Import Project = "$(UserProfile)\.nuget\packages\obfuscatorutility\1.0.0\build\ObfuscatorUtility.props" Condition="Exists('$(UserProfile)\.nuget\packages\obfuscatorutility\1.0.0\build\ObfuscatorUtility.props')" />
 
   <PropertyGroup>
     <Copyright></Copyright>
@@ -132,6 +134,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="ObfuscatorUtility.PieroViano" Version="1.0.0" PrivateAssets="All" />
+    <PackageReference Include="ObfuscatorUtility" Version="1.0.0" PrivateAssets="All" />
   </ItemGroup>
 </Project>
