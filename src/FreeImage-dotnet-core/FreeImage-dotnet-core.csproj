@@ -18,7 +18,6 @@
     <PackageTags>FreeImage;netcore;dotnetcore</PackageTags>
     <PackageIconUrl>http://freeimage.sourceforge.net/images/logo.jpg</PackageIconUrl>
     <PackageProjectUrl>https://github.com/matgr1/FreeImage-dotnet-core</PackageProjectUrl>
-    <PackageLicenseUrl>http://freeimage.sourceforge.net/license.html</PackageLicenseUrl>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/matgr1/FreeImage-dotnet-core</RepositoryUrl>
     <Version>4.3.7</Version>
