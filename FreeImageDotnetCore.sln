@@ -8,12 +8,16 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
 		Build.bat = Build.bat
+		Directory.Build.Props = Directory.Build.Props
+		Directory.NuGet.props = Directory.NuGet.props
 		README.md = README.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{32568241-B63B-4E05-A92D-C46C50EECFB9}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTest", "src\UnitTest\UnitTest.csproj", "{0140ED84-DFCD-4547-9642-4557A24F835E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{1E7B34F1-33DE-44C2-BB9F-26CB38C250B7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,7 +39,7 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{249C05B3-BB94-4EB1-92AE-E6DF4C2C068A} = {32568241-B63B-4E05-A92D-C46C50EECFB9}
-		{0140ED84-DFCD-4547-9642-4557A24F835E} = {32568241-B63B-4E05-A92D-C46C50EECFB9}
+		{0140ED84-DFCD-4547-9642-4557A24F835E} = {1E7B34F1-33DE-44C2-BB9F-26CB38C250B7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D2BC2E8B-27F7-4A70-85FD-BCC814A65ACA}
