@@ -12,7 +12,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\FreeImage-dotnet-core\FreeImage-dotnet-core.csproj" />
+    <ProjectReference Include="..\FreeImage-dotnet-core\FreeImage.csproj" />
   </ItemGroup>
 
   <ItemGroup>
