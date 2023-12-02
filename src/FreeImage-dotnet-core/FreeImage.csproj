@@ -1,10 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <SkipAsyncBridge>true</SkipAsyncBridge>
   </PropertyGroup>
-  <Import Project = "$(UserProfile)\.nuget\packages\nugetutility\$(NuGetUtilityVersion)\build\NuGet.Utility.targets" Condition="Exists('$(UserProfile)\.nuget\packages\nugetutility\$(NuGetUtilityVersion)\build\NuGet.Utility.targets')" />
-  <Import Project = "$(UserProfile)\.nuget\packages\nugetutility\$(NuGetUtilityVersion)\build\NuGet.Utility.props" Condition="Exists('$(UserProfile)\.nuget\packages\nugetutility\$(NuGetUtilityVersion)\build\NuGet.Utility.props')" />
-
+  <Import Project="$(UserProfile)\.nuget\packages\nugetutility\$(NuGetUtilityVersion)\build\NuGet.Utility.targets" Condition="Exists('$(UserProfile)\.nuget\packages\nugetutility\$(NuGetUtilityVersion)\build\NuGet.Utility.targets')" />
+  <Import Project="$(UserProfile)\.nuget\packages\nugetutility\$(NuGetUtilityVersion)\build\NuGet.Utility.props" Condition="Exists('$(UserProfile)\.nuget\packages\nugetutility\$(NuGetUtilityVersion)\build\NuGet.Utility.props')" />
   <PropertyGroup>
     <Copyright></Copyright>
     <AssemblyTitle>FreeImage dotnet core</AssemblyTitle>
@@ -34,9 +34,7 @@
     </Description>
     <IncludeSymbols>True</IncludeSymbols>
   </PropertyGroup>
-
   <ItemGroup>
-
     <None Include="..\..\runtimes\win7-x64\native\FreeImage.dll">
       <PackagePath>runtimes/win7-x64/native/FreeImage.dll</PackagePath>
       <Pack>true</Pack>
@@ -45,95 +43,77 @@
       <PackagePath>runtimes/win7-x86/native/FreeImage.dll</PackagePath>
       <Pack>true</Pack>
     </None>
-
     <!-- NOTE: this is renaming to FreeImage... might be avoidable if dll mapping is implemented: https://github.com/dotnet/coreclr/issues/930 -->
     <None Include="..\..\runtimes\osx.10.10-x64\native\libfreeimage.3.17.0.dylib">
       <PackagePath>runtimes/osx.10.10-x64/native/FreeImage.dylib</PackagePath>
       <Pack>true</Pack>
     </None>
-
     <!-- NOTE: this is renaming to FreeImage... might be avoidable if dll mapping is implemented: https://github.com/dotnet/coreclr/issues/930 -->
     <None Include="..\..\runtimes\ubuntu.16.04-x64\native\libfreeimage-3.17.0.so">
       <PackagePath>runtimes/ubuntu.16.04-x64/native/FreeImage.so</PackagePath>
       <Pack>true</Pack>
     </None>
-
   </ItemGroup>
-
   <!--<ItemGroup>
 	<None Include="PackageTargets\FreeImage-dotnet-core.targets">
 	  <PackagePath>build/FreeImage-dotnet-core.targets</PackagePath>
 	  <Pack>true</Pack>
 	</None>
   </ItemGroup>-->
-
   <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard2.0' ">
-    <PackageReference Include="System.Drawing.Common" Version="6.0.0" />
+    <PackageReference Include="System.Drawing.Common" Version="$(SystemDrawingCommonVersion)" />
   </ItemGroup>
-
   <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard1.6' ">
     <PackageReference Include="System.Drawing-dotnet-core" Version="1.2.3" />
   </ItemGroup>
-
   <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard1.5' ">
     <PackageReference Include="System.Drawing-dotnet-core" Version="1.2.3" />
   </ItemGroup>
-
   <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard1.4' ">
     <PackageReference Include="System.Drawing-dotnet-core" Version="1.2.3" />
   </ItemGroup>
-
   <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard1.3' ">
     <PackageReference Include="System.Drawing-dotnet-core" Version="1.2.3" />
   </ItemGroup>
-
   <ItemGroup Condition=" '$(TargetFramework)' == 'net6.0-windows' ">
-    <PackageReference Include="System.Drawing.Common" Version="6.0.0" />
+    <PackageReference Include="System.Drawing.Common" Version="$(SystemDrawingCommonVersion)" />
   </ItemGroup>
-
   <ItemGroup Condition=" '$(TargetFramework)' == 'net5.0-windows' ">
-    <PackageReference Include="System.Drawing.Common" Version="5.0.0" />
+    <PackageReference Include="System.Drawing.Common" Version="$(SystemDrawingCommonVersion)" />
   </ItemGroup>
-
   <ItemGroup Condition=" '$(TargetFramework)' == 'net461' ">
     <Reference Include="System.Drawing" />
     <Reference Include="System.Xml" />
     <Reference Include="System" />
     <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
-
   <ItemGroup Condition=" '$(TargetFramework)' == 'net46' ">
     <Reference Include="System.Drawing" />
     <Reference Include="System.Xml" />
     <Reference Include="System" />
     <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
-
   <ItemGroup Condition=" '$(TargetFramework)' == 'net452' ">
     <Reference Include="System.Drawing" />
     <Reference Include="System.Xml" />
     <Reference Include="System" />
     <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
-
   <ItemGroup Condition=" '$(TargetFramework)' == 'net451' ">
     <Reference Include="System.Drawing" />
     <Reference Include="System.Xml" />
     <Reference Include="System" />
     <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
-
   <ItemGroup Condition=" '$(TargetFramework)' == 'net45' ">
     <Reference Include="System.Drawing" />
     <Reference Include="System.Xml" />
     <Reference Include="System" />
     <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
-
   <PropertyGroup>
     <PackageOutputPath>$(SolutionDir)Packages\</PackageOutputPath>
   </PropertyGroup>
-
   <ItemGroup>
     <PackageReference Include="NuGetUtility" Version="$(NuGetUtilityVersion)" PrivateAssets="All" />
   </ItemGroup>
