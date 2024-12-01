@@ -3,8 +3,8 @@
     <PropertyGroup>
         <SkipAsyncBridge>true</SkipAsyncBridge>
     </PropertyGroup>
-    <Import Project="$(UserProfile)\.nuget\packages\nugetutility\$(NuGetUtilityVersion)\build\NuGet.Utility.targets" Condition="Exists('$(UserProfile)\.nuget\packages\nugetutility\$(NuGetUtilityVersion)\build\NuGet.Utility.targets')" />
-    <Import Project="$(UserProfile)\.nuget\packages\nugetutility\$(NuGetUtilityVersion)\build\NuGet.Utility.props" Condition="Exists('$(UserProfile)\.nuget\packages\nugetutility\$(NuGetUtilityVersion)\build\NuGet.Utility.props')" />
+    <Import Condition="Exists('$(UserProfile)\.nuget\packages\nugetutility\$(NuGetUtilityVersion)\build\NuGet.Utility.targets')" Project="$(UserProfile)\.nuget\packages\nugetutility\$(NuGetUtilityVersion)\build\NuGet.Utility.targets" />
+    <Import Condition="Exists('$(UserProfile)\.nuget\packages\nugetutility\$(NuGetUtilityVersion)\build\NuGet.Utility.props')" Project="$(UserProfile)\.nuget\packages\nugetutility\$(NuGetUtilityVersion)\build\NuGet.Utility.props" />
     <PropertyGroup>
         <Copyright></Copyright>
         <AssemblyTitle>FreeImage dotnet core</AssemblyTitle>
@@ -61,40 +61,35 @@
 	</None>
   </ItemGroup>-->
     <ItemGroup>
-        <PackageReference Include="System.Drawing.Common" Version="$(SystemDrawingCommonVersion)" Condition=" '$(TargetFramework)' == 'netstandard2.0' " />
-        <PackageReference Include="System.Drawing-dotnet-core" Version="1.2.3" Condition=" '$(TargetFramework)' == 'netstandard1.6' " />
-        <PackageReference Include="System.Drawing-dotnet-core" Version="1.2.3" Condition=" '$(TargetFramework)' == 'netstandard1.5' " />
-        <PackageReference Include="System.Drawing-dotnet-core" Version="1.2.3" Condition=" '$(TargetFramework)' == 'netstandard1.4' " />
-        <PackageReference Include="System.Drawing-dotnet-core" Version="1.2.3" Condition=" '$(TargetFramework)' == 'netstandard1.3' " />
-        <PackageReference Include="System.Drawing.Common" Version="$(SystemDrawingCommonVersion)" Condition=" '$(TargetFramework)' == 'net6.0-windows' " />
-        <PackageReference Include="System.Drawing.Common" Version="$(SystemDrawingCommonVersion)" Condition=" '$(TargetFramework)' == 'net5.0-windows' " />
+        <PackageReference Include="System.Drawing-dotnet-core" Condition=" '$(TargetFramework)' == 'netstandard1.6'  or  '$(TargetFramework)' == 'netstandard1.5'  or  '$(TargetFramework)' == 'netstandard1.4'  or  '$(TargetFramework)' == 'netstandard1.3' " Version="1.2.3" />
+        <PackageReference Include="System.Drawing.Common" Condition=" '$(TargetFramework)' == 'netstandard2.0'  or  '$(TargetFramework)' == 'net6.0-windows'  or  '$(TargetFramework)' == 'net5.0-windows' " Version="$(SystemDrawingCommonVersion)" />
     </ItemGroup>
     <ItemGroup>
-        <Reference Include="System.Drawing" Condition=" '$(TargetFramework)' == 'net461' " />
-        <Reference Include="System.Xml" Condition=" '$(TargetFramework)' == 'net461' " />
-        <Reference Include="System" Condition=" '$(TargetFramework)' == 'net461' " />
         <Reference Include="Microsoft.CSharp" Condition=" '$(TargetFramework)' == 'net461' " />
-        <Reference Include="System.Drawing" Condition=" '$(TargetFramework)' == 'net46' " />
-        <Reference Include="System.Xml" Condition=" '$(TargetFramework)' == 'net46' " />
-        <Reference Include="System" Condition=" '$(TargetFramework)' == 'net46' " />
         <Reference Include="Microsoft.CSharp" Condition=" '$(TargetFramework)' == 'net46' " />
-        <Reference Include="System.Drawing" Condition=" '$(TargetFramework)' == 'net452' " />
-        <Reference Include="System.Xml" Condition=" '$(TargetFramework)' == 'net452' " />
-        <Reference Include="System" Condition=" '$(TargetFramework)' == 'net452' " />
         <Reference Include="Microsoft.CSharp" Condition=" '$(TargetFramework)' == 'net452' " />
-        <Reference Include="System.Drawing" Condition=" '$(TargetFramework)' == 'net451' " />
-        <Reference Include="System.Xml" Condition=" '$(TargetFramework)' == 'net451' " />
-        <Reference Include="System" Condition=" '$(TargetFramework)' == 'net451' " />
         <Reference Include="Microsoft.CSharp" Condition=" '$(TargetFramework)' == 'net451' " />
-        <Reference Include="System.Drawing" Condition=" '$(TargetFramework)' == 'net45' " />
-        <Reference Include="System.Xml" Condition=" '$(TargetFramework)' == 'net45' " />
-        <Reference Include="System" Condition=" '$(TargetFramework)' == 'net45' " />
         <Reference Include="Microsoft.CSharp" Condition=" '$(TargetFramework)' == 'net45' " />
+        <Reference Include="System" Condition=" '$(TargetFramework)' == 'net461' " />
+        <Reference Include="System" Condition=" '$(TargetFramework)' == 'net46' " />
+        <Reference Include="System" Condition=" '$(TargetFramework)' == 'net452' " />
+        <Reference Include="System" Condition=" '$(TargetFramework)' == 'net451' " />
+        <Reference Include="System" Condition=" '$(TargetFramework)' == 'net45' " />
+        <Reference Include="System.Drawing" Condition=" '$(TargetFramework)' == 'net461' " />
+        <Reference Include="System.Drawing" Condition=" '$(TargetFramework)' == 'net46' " />
+        <Reference Include="System.Drawing" Condition=" '$(TargetFramework)' == 'net452' " />
+        <Reference Include="System.Drawing" Condition=" '$(TargetFramework)' == 'net451' " />
+        <Reference Include="System.Drawing" Condition=" '$(TargetFramework)' == 'net45' " />
+        <Reference Include="System.Xml" Condition=" '$(TargetFramework)' == 'net461' " />
+        <Reference Include="System.Xml" Condition=" '$(TargetFramework)' == 'net46' " />
+        <Reference Include="System.Xml" Condition=" '$(TargetFramework)' == 'net452' " />
+        <Reference Include="System.Xml" Condition=" '$(TargetFramework)' == 'net451' " />
+        <Reference Include="System.Xml" Condition=" '$(TargetFramework)' == 'net45' " />
     </ItemGroup>
     <PropertyGroup>
         <PackageOutputPath>$(SolutionDir)Packages\</PackageOutputPath>
     </PropertyGroup>
     <ItemGroup>
-        <PackageReference Include="NuGetUtility" Version="$(NuGetUtilityVersion)" PrivateAssets="All" />
+        <PackageReference Include="NuGetUtility" PrivateAssets="All" Version="$(NuGetUtilityVersion)" />
     </ItemGroup>
 </Project>
