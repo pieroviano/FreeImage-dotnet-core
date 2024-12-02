@@ -75,11 +75,13 @@
     <HtmlCleanerVersion>1.4.0</HtmlCleanerVersion>
     <IdentityApplicationVersion>2.2.0</IdentityApplicationVersion>
     <IdentityModelVersion>7.0.0</IdentityModelVersion>
+    <IdentityServer4AccessTokenValidationnugetVersion>4.1.0</IdentityServer4AccessTokenValidationnugetVersion>
     <IdentityServer4AccessTokenValidationVersion>4.0.0</IdentityServer4AccessTokenValidationVersion>
     <IdentityServer4StorageVersion>4.0.0</IdentityServer4StorageVersion>
     <IdentityServer4Version>4.1.0</IdentityServer4Version>
     <ImmatricolazioniLibraries>1.0.0</ImmatricolazioniLibraries>
     <ImmatricolazioniWsLibrariesVersion>1.1.0</ImmatricolazioniWsLibrariesVersion>
+    <InjectModuleInitializernugetVersion>1.3.0</InjectModuleInitializernugetVersion>
     <InjectModuleInitializerVersion>1.3.0</InjectModuleInitializerVersion>
     <InputBoxLibraryVersion>2.0.0</InputBoxLibraryVersion>
     <InputSimulatorVersion>2.2.0</InputSimulatorVersion>
@@ -104,7 +106,9 @@
     <MSBuildCommunityTasksVersion>1.6.0</MSBuildCommunityTasksVersion>
     <MsTestsToNunitVersion>1.0.0</MsTestsToNunitVersion>
     <Net30LinqBridgeVersion>1.6.0</Net30LinqBridgeVersion>
+    <Net35ActionsnugetVersion>1.4.0</Net35ActionsnugetVersion>
     <Net35ActionsVersion>1.4.0</Net35ActionsVersion>
+    <Net35BuffersnugetVersion>1.0.0</Net35BuffersnugetVersion>
     <Net35BuffersVersion>1.0.0</Net35BuffersVersion>
     <Net35ThreadingTasksVersion>1.4.0</Net35ThreadingTasksVersion>
     <Net35ThredingTasksVersion>1.4.0</Net35ThredingTasksVersion>
@@ -112,16 +116,19 @@
     <Net4xAsyncBridgeVersion>1.5.0</Net4xAsyncBridgeVersion>
     <Net4xBaseTypesVersion>1.3.0</Net4xBaseTypesVersion>
     <Net4xBuffersVersion>1.2.0</Net4xBuffersVersion>
+    <Net4xConfigurationnugetVersion>1.1.0</Net4xConfigurationnugetVersion>
     <Net4xConfigurationVersion>1.1.0</Net4xConfigurationVersion>
     <Net4xDataDataSetExtensionsVersion>4.8.0</Net4xDataDataSetExtensionsVersion>
     <Net4xDrawingVersion>4.8.9037</Net4xDrawingVersion>
     <Net4xEntityFrameworkLibVersion>1.2.0</Net4xEntityFrameworkLibVersion>
     <Net4xEntityFrameworkVersion>6.4.4</Net4xEntityFrameworkVersion>
     <Net4xExtensionsVersion>2.5.0</Net4xExtensionsVersion>
+    <Net4xInternetExplorernugetVersion>1.2.0</Net4xInternetExplorernugetVersion>
     <Net4xIoCompressionVersion>1.0.0</Net4xIoCompressionVersion>
     <Net4xIOCompressionVersion>1.0.0</Net4xIOCompressionVersion>
     <Net4xiTextSharpVersion>5.5.14</Net4xiTextSharpVersion>
     <Net4xiTextVersion>1.1.0</Net4xiTextVersion>
+    <Net4xMSHTMLnugetVersion>1.2.0</Net4xMSHTMLnugetVersion>
     <Net4xMSHTMLVersion>1.2.0</Net4xMSHTMLVersion>
     <Net4xMsTestsVersion>1.5.0</Net4xMsTestsVersion>
     <Net4XRuntimeCachingVersion>1.3.0</Net4XRuntimeCachingVersion>
@@ -142,7 +149,9 @@
     <OcrLibrarynugetVersion>1.3.0</OcrLibrarynugetVersion>
     <OcrLibraryVersion>1.3.0</OcrLibraryVersion>
     <OpenSearchExtensionsVersion>1.0.0</OpenSearchExtensionsVersion>
+    <PackAsLibrarynugetVersion>1.2.0</PackAsLibrarynugetVersion>
     <PackAsLibraryVersion>1.2.0</PackAsLibraryVersion>
+    <PackAsToolnugetVersion>1.2.0</PackAsToolnugetVersion>
     <PackAsToolVersion>1.2.0</PackAsToolVersion>
     <PagedListVersion>4.6.0</PagedListVersion>
     <PdfCompressorLibraryVersion>1.2.0</PdfCompressorLibraryVersion>
@@ -177,6 +186,7 @@
     <ServiceLibraryVersion>1.62.0</ServiceLibraryVersion>
     <SetupCustomActionVersion>1.1.0</SetupCustomActionVersion>
     <SgmlLibraryVersion>1.0.0</SgmlLibraryVersion>
+    <SqlParametersToVariableDefinitionsnugetVersion>1.0.0</SqlParametersToVariableDefinitionsnugetVersion>
     <SqlParametersToVariableDefinitionsVersion>1.0.0</SqlParametersToVariableDefinitionsVersion>
     <StarbCommonVersion>2.0.0</StarbCommonVersion>
     <StarbNet8Version>30.0.0</StarbNet8Version>
@@ -205,7 +215,9 @@
     <TitaniumWebProxyDocsVersion>2.1.0</TitaniumWebProxyDocsVersion>
     <TitaniumWebProxyNet40Version>2.1.0</TitaniumWebProxyNet40Version>
     <TitaniumWebProxyVersion>2.1.0</TitaniumWebProxyVersion>
+    <TopMostLibrarynugetVersion>1.0.0</TopMostLibrarynugetVersion>
     <TopMostLibraryVersion>1.0.0</TopMostLibraryVersion>
+    <TouchLibrarynugetVersion>1.2.0</TouchLibrarynugetVersion>
     <TouchLibraryVersion>1.2.0</TouchLibraryVersion>
     <UnitTestLibrary>1.2.0</UnitTestLibrary>
     <UnitTestLibraryVersion>1.3.0</UnitTestLibraryVersion>
@@ -222,8 +234,10 @@
     <VisualBasicLibraryVersion>1.2.0</VisualBasicLibraryVersion>
     <WebBrowserLibraryInterfacesVersion>1.5.0</WebBrowserLibraryInterfacesVersion>
     <WebBrowserLibraryVersion>1.5.0</WebBrowserLibraryVersion>
+    <WhenTheVersionnugetVersion>1.2.0</WhenTheVersionnugetVersion>
     <WhenTheVersionVersion>1.2.0</WhenTheVersionVersion>
     <WiaScannerLibraryVersion>1.26.0</WiaScannerLibraryVersion>
+    <Win32InteropnugetVersion>1.1.0</Win32InteropnugetVersion>
     <Win32InteropVersion>1.1.0</Win32InteropVersion>
     <WindowsAPICodePackVersion>1.2.0</WindowsAPICodePackVersion>
     <WindowsFormsApp1Version>1.0.0</WindowsFormsApp1Version>
